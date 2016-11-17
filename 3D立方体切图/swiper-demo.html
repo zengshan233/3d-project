@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SWIPER DEMO</title>
+	<link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+	<audio src="videos/brother.mp4" controls="controls" autoplay="autoplay"></audio>
+	<div class="swiper-container" id="swiper">
+		
+		  <div class="swiper-wrapper">
+		  	
+		      <div class="swiper-slide first current"> 
+		      	<img class="banner" src="images/banner_02.png">
+		         <video src="http://gw.alicdn.com/bao/uploaded/LB1bC41LVXXXXcGXFXXXXXXXXXX.mp4?spm=a1z3i.a4.0.0.NsEk6Q&file=LB1bC41LVXXXXcGXFXXXXXXXXXX.mp4" autoplay="autoplay"></video>
+		      	<div class="tao_video">
+		      		<p></p>
+		      	</div>
+		      	<div class="mask"></div>
+		      	<img src="images/bt1.png" class="bt">	      	
+		      </div>
+		      
+		      <div class="swiper-slide second"> 
+		      	<img class="banner" src="images/banner_02.png">
+		      	<img class="img_01" src="images/wer.png">
+		      	<img class="img_02" src="images/ab.png">
+		      	<img class="img_03" src="images/c.png">
+		      	<img class="img_04" src="images/b.png">
+		      	<img class="img_05" src="images/ac.png">
+		      	<img class="img_06" src="images/ad.png">
+		      	<img  src="images/bt1.png" class="bt">
+		      </div>
+		      
+		      <div class="swiper-slide three"> 
+		      	<img class="banner" src="images/banner_02.png">
+		      	<img class="img_01" src="images/bb.png">
+		      	<img class="img_02" src="images/bc.png">
+		      	<img class="img_03" src="images/bd.png">
+		      	<img class="img_04" src="images/be.png">
+		      	<img class="img_05" src="images/bf.png">
+		      	<img class="img_06" src="images/bg.png">
+		      	<img src="images/bt1.png" class="bt">
+		      </div>
+		      
+		        <div class="swiper-slide fourth"> 
+		      	<img class="banner" src="images/banner_02.png">
+		      	<img class="img_01" src="images/ca.png">
+		      	<img class="img_02" src="images/cb.png">
+		      	<img class="img_03" src="images/cc.png">
+		      	<img class="img_04" src="images/cd.png">
+		      	<img class="img_05" src="images/ce.png">
+		      	<img class="img_06" src="images/cf.png">
+		      	<img src="images/bt1.png" class="bt">
+		      </div>
+		      
+		       <div class="swiper-slide fifth"> 
+		      	<img class="banner" src="images/banner_02.png">
+		      	<img class="img_01" src="images/da.png">
+		      	<img class="img_02" src="images/db.png">
+		      	<img class="img_03" src="images/dc.png">
+		      	<img class="img_04" src="images/dd.png">
+		      	<img class="img_05" src="images/de.png">
+		      	<img src="images/bt1.png" class="bt">
+		      </div>
+		  </div>
+    	  <div class="swiper-pagination"></div>
+    	  
+	</div>
+		    <script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>  	
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+
+	<script>
+		$(function(){
+		 var mySwiper = new Swiper ('.swiper-container', {
+	    direction: 'vertical',
+	    pagination: '.swiper-pagination',
+	    paginationClickable: true,
+	    onSlideChangeEnd: function(swiper){
+	        var i = swiper.activeIndex;
+	        $('.swiper-slide').eq(i).addClass('current').siblings('.swiper-slide').removeClass('current');
+    }
+	  }) 
+	
+		})
+	   
+  </script>
+  
+</body>
+</html>
